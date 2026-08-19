@@ -7,8 +7,8 @@ class Solution {
             int right=nums.length-1;
             while(left<right){
                 int sum=nums[i]+nums[left]+nums[right];
-                if (Math.abs(target - sum) < Math.abs(target - close)) {
-                    close =sum;
+                if(Math.abs(target-sum)<Math.abs(target-close)){
+                    close=sum;
                 }
                 if(sum==target){
                     return sum;
